@@ -3,7 +3,7 @@ import { Outlet } from "react-router";
 
 export function BrowseLayout() {
   return (
-    <div className="relative h-screen text-neutral-300 bg-neutral-900">
+    <div className="relative h-screen text-neutral-300 bg-neutral-900 overflow-x-hidden">
       <Navbar />
       <Outlet />
     </div>

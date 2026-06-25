@@ -2,10 +2,11 @@ import netflix_logo from "@/assets/netflix-logo.png";
 import { Link } from "react-router";
 import { CarouselNav } from "./carousel-nav";
 import { Bell, Download, Tv } from "lucide-react";
+import { DecorationLight } from "../decoration-light/decoration-light";
 
 export default function Navbar() {
   return (
-    <header className="flex flex-col md:flex-row gap-3 px-6 py-6 md:h-20 md:px-20">
+    <header className="relative flex flex-col md:flex-row gap-3 px-6 py-6 md:h-20 md:px-20 ">
       <nav className="flex w-full items-center justify-between">
         <Link to={"/"}>
           <img
@@ -23,6 +24,8 @@ export default function Navbar() {
       </nav>
 
       <CarouselNav />
+
+      <DecorationLight />
     </header>
   );
 }
