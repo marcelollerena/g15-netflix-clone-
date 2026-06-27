@@ -15,7 +15,7 @@ export function useGetMovieById(id: number) {
   }, [id]);
 
   return {
-    movie,
+    movie: movie ? movie : ({} as MovieDetail),
     error,
     loading,
   };

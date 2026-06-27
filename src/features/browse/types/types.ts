@@ -84,3 +84,40 @@ export interface SpokenLanguage {
   iso_639_1: string;
   name: string;
 }
+
+export interface VideoResults {
+  id: number;
+  results: Result[];
+}
+
+export interface Result {
+  iso_639_1: ISO639_1;
+  iso_3166_1: ISO3166_1;
+  name: string;
+  key: string;
+  site: Site;
+  size: number;
+  type: Type;
+  official: boolean;
+  id: string;
+  published_at: Date;
+}
+
+export interface ISO3166_1 {
+  Us: "US";
+}
+
+export interface ISO639_1 {
+  En: "en";
+}
+
+export interface Site {
+  YouTube: "YouTube";
+}
+
+export interface Type {
+  BehindTheScenes: "Behind the Scenes";
+  Featurette: "Featurette";
+  Teaser: "Teaser";
+  Trailer: "Trailer";
+}

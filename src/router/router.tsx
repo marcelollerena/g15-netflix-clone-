@@ -4,6 +4,7 @@ import { SignIn } from "@/app/auth/sign-in";
 import { ProtectedRoute } from "@/common/security/protected-route/protected-route";
 import { BrowseLayout } from "@/common/layouts/browse-layout/browse-layout";
 import { Home } from "@/app/browse/home/home";
+import { Movie } from "@/app/browse/movie/movie";
 
 export const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
             Component: Home,
           },
         ],
+      },
+      {
+        path: "browse/movie/:id",
+        Component: Movie,
       },
     ],
   },
