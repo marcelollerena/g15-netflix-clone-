@@ -1,7 +1,7 @@
 export const links = [
   { label: "Home", to: "/" },
-  { label: "Shows", to: "/shows" },
-  { label: "Movies", to: "/movies" },
+  { label: "Shows", to: "/browse/shows" },
+  { label: "Movies", to: "/browse/movies" },
   { label: "My List", to: "/my-list" },
 ];
 

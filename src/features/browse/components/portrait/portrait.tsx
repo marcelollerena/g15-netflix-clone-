@@ -1,7 +1,7 @@
 import { domains } from "@/common/constants/domains/domains";
 import type { Movie } from "../../types/types";
 import { Title } from "@/common/components/text/title/title";
-import { Play, Plus } from "lucide-react";
+// import { Play, Plus } from "lucide-react";
 import { useGetMovieById } from "../../hooks/use-get-movie-by-id";
 import { PortraitSkeleton } from "../skeletons/portrait-skeleton";
 
@@ -30,7 +30,7 @@ export function Portrait(props: Props) {
           {movie.title}
         </Title>
 
-        <div className="flex gap-4 z-10">
+        {/* <div className="flex gap-4 z-10">
           <button className="h-12 rounded-lg w-full text-center bg-white font-semibold text-black flex justify-center items-center gap-4">
             <Play fill="black" /> <p>Play</p>
           </button>
@@ -38,7 +38,7 @@ export function Portrait(props: Props) {
           <button className="h-12 rounded-lg w-full text-center bg-white/10 font-semibold text-white flex justify-center items-center gap-4">
             <Plus /> <p>My List</p>
           </button>
-        </div>
+        </div> */}
 
         <div
           className="absolute bottom-0 left-0 right-0 h-95 rounded-lg

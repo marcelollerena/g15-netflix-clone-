@@ -4,7 +4,7 @@ import { getMovieType } from "../../utils/get-movie-type";
 import { Title } from "@/common/components/text/title/title";
 
 interface Props {
-  movieType: movieType;
+  movieType: movieType | string;
   movies: Movie[] | undefined;
 }
 

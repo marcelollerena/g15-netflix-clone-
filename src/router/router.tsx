@@ -5,6 +5,8 @@ import { ProtectedRoute } from "@/common/security/protected-route/protected-rout
 import { BrowseLayout } from "@/common/layouts/browse-layout/browse-layout";
 import { Home } from "@/app/browse/home/home";
 import { Movie } from "@/app/browse/movie/movie";
+import { Browse } from "@/app/browse/browse/browse";
+import MyList from "@/app/my-list/my-list";
 
 export const router = createBrowserRouter([
   {
@@ -21,6 +23,14 @@ export const router = createBrowserRouter([
           {
             index: true,
             Component: Home,
+          },
+          {
+            path: "browse/:movieGenre",
+            Component: Browse,
+          },
+          {
+            path: "my-list",
+            Component: MyList,
           },
         ],
       },

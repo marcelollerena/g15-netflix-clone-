@@ -8,5 +8,7 @@ export const getMovieType = (type: string) => {
       return "Top rated";
     case "upcoming":
       return "Recently added";
+    default:
+      return type;
   }
 };
